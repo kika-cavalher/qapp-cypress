@@ -1,0 +1,15 @@
+{
+  "name": "e2e-qapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "keywords": [],
+  "author": "Erica Cavalher",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^10.1.0"
+  }
+}
