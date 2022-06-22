@@ -5,6 +5,6 @@ describe('Home page', () => {
   it('App must be online', () => {
     cy.viewport(1920,1080)
     cy.visit(site)
-    cy.get('h1').should('have.text', TextLoginHome)
+    cy.get('#page-login h1').should('have.text', TextLoginHome)
   })
 })
