@@ -1,0 +1,17 @@
+{
+  "user": {
+    "Nome completo": "Erica Cypress",
+    "E-mail": "erica.cavalher+01@gmail.com",
+    "Senha": "Kika1234",
+    "Confirmar senha": "Kika1234"
+  },
+  "newUser": {
+    "Nome completo": "Erica Cypress",
+    "anexo": "nomeArquivo.jpg "
+  },
+  "newUserError": {
+    "Nome completo": "55555",
+    "anexo": "nomeArquivo.jpg "
+  },
+  "textMessageErorr": "Aqui é o texto da mensagem de erro."
+}

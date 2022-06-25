@@ -11,18 +11,18 @@ export function InicializeApp() {
   cy.get('.page-register--container__title h1').should('have.text', TextSignUp)
 }
 
-export function FillForm(newClient) {
+export function FillForm(user) {
   //Popular forms
-  cy.get('input[name="name"]').type(newClient["Nome completo"])
-  cy.get('input[name="email"]').type(newClient["E-mail"])
-  cy.get('input[name="password"]').type(newClient["Senha"])
-  cy.get('input[name="confirmPassword"]').type(newClient["Confirmar senha"])
+  cy.get('input[name="name"]').type(user["Nome completo"])
+  cy.get('input[name="email"]').type(user["E-mail"])
+  cy.get('input[name="password"]').type(user["Senha"])
+  cy.get('input[name="confirmPassword"]').type(user["Confirmar senha"])
 
   //Verificar texto forms
-  cy.get('input[name="name"]').should('have.value', newClient["Nome completo"])
-  cy.get('input[name="email"]').should('have.value', newClient["E-mail"])
-  cy.get('input[name="password"]').should('have.value', newClient["Senha"])
-  cy.get('input[name="confirmPassword"]').should('have.value', newClient["Confirmar senha"])
+  cy.get('input[name="name"]').should('have.value', user["Nome completo"])
+  cy.get('input[name="email"]').should('have.value', user["E-mail"])
+  cy.get('input[name="password"]').should('have.value', user["Senha"])
+  cy.get('input[name="confirmPassword"]').should('have.value', user["Confirmar senha"])
 }
 
 export function Submit() {

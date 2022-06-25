@@ -1,11 +1,17 @@
 import {InicializeApp, FillForm, Submit} from '../../Pages/signUp'
-import {newClient} from '../../massaTeste/User'
 
 
 describe('Forms project page', () => {
-  it('Se inscrever no projeto', () => {
+
+  before(function(){
+    cy.fixture('user').then(function(db){
+       this.userDb = db
+    })
+  })
+
+  it('Criar um novo user', function () {
     InicializeApp()
-    FillForm(newClient)
+    FillForm(this.userDb.user)
     Submit()
   })
 })
