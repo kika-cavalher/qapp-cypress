@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/kika-cavalher/qapp-tests/issues"
   },
-  "homepage": "https://github.com/kika-cavalher/qapp-tests#readme"
+  "homepage": "https://github.com/kika-cavalher/qapp-tests#readme",
+  "devDependencies": {
+    "cypress": "^10.2.0",
+    "faker": "^6.6.6"
+  }
 }
