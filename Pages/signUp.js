@@ -25,6 +25,11 @@ export function FillForm(user) {
   cy.get('input[name="confirmPassword"]').should('have.value', user["Confirmar senha"])
 }
 
+//   export function ShowError(TextModal) {
+//     //Localizar elemento com class de stilo somente
+//     cy.get('input[name="email"]').should('have.text', TextModal)
+// }
+
 export function Submit() {
   //Clicar no botão
   cy.get('.btn__send button').click()
