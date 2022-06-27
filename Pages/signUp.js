@@ -13,16 +13,16 @@ export function InicializeApp() {
 
 export function FillForm(user) {
   //Popular forms
-  cy.get('input[name="name"]').type(user["Nome completo"])
-  cy.get('input[name="email"]').type(user["E-mail"])
-  cy.get('input[name="password"]').type(user["Senha"])
-  cy.get('input[name="confirmPassword"]').type(user["Confirmar senha"])
+  cy.get('input[name="name"]').type(user["fullName"])
+  cy.get('input[name="email"]').type(user["email"])
+  cy.get('input[name="password"]').type(user["password"])
+  cy.get('input[name="confirmPassword"]').type(user["checkPassword"])
 
   //Verificar texto forms
-  cy.get('input[name="name"]').should('have.value', user["Nome completo"])
-  cy.get('input[name="email"]').should('have.value', user["E-mail"])
-  cy.get('input[name="password"]').should('have.value', user["Senha"])
-  cy.get('input[name="confirmPassword"]').should('have.value', user["Confirmar senha"])
+  cy.get('input[name="name"]').should('have.value', user["fullName"])
+  cy.get('input[name="email"]').should('have.value', user["email"])
+  cy.get('input[name="password"]').should('have.value', user["password"])
+  cy.get('input[name="confirmPassword"]').should('have.value', user["checkPassword"])
 }
 
 //   export function ShowError(TextModal) {

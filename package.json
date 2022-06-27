@@ -19,6 +19,6 @@
   "homepage": "https://github.com/kika-cavalher/qapp-tests#readme",
   "devDependencies": {
     "cypress": "^10.2.0",
-    "faker": "^6.6.6"
+    "faker": "^5.5.3"
   }
 }
