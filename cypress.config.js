@@ -1,8 +1,10 @@
-const { defineConfig } = require('cypress')
-
-module.exports = defineConfig({
+module.exports = {
+  // The rest of the Cypress config options go here...
   projectId: "fu4b3m",
+
   e2e: {
-    // baseUrl: 'http://localhost:1234'
-  }
-})
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    },
+  },
+};
