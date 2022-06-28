@@ -6,7 +6,7 @@ export default {
         const lastName = faker.name.lastName()
         const email = faker.internet.email(firstName)
 
-        var data = {
+        const data = {
             fullName: `${firstName} ${lastName}`,
             email: `${email}`,
             password: 'Kika1234',
