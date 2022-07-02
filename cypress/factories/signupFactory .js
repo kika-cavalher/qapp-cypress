@@ -2,17 +2,17 @@ var faker = require('faker')
 
 export default {
 
-    delivery: function () {
+    user: function () {
 
-        var firstName = faker.name.firstName()
-        var lastName = faker.name.lastName()
-        var email = faker.internet.email(firstName)
+        const firstName = faker.name.firstName()
+        const lastName = faker.name.lastName()
+        const email = faker.internet.email(firstName)
 
         var db = {
-            "Nome completo": `${firstName} ${lastName}`,
-            "E-mail": `${email}`,
-            "Senha": "Kika1234",
-            "Confirmar senha": "Kika1234"
+            "fullName": `${firstName} ${lastName}`,
+            "email": `${email}`,
+            "password": "Kika1234",
+            "checkPassword": "Kika1234"
         }
 
         return db

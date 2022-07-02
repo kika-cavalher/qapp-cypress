@@ -25,12 +25,6 @@ export function FillForm(user) {
   cy.get('input[name="confirmPassword"]').should('have.value', user["checkPassword"])
 }
 
-//   export function alertMessageShouldBe(expectedMessage) {
-//     cy.contains('.alert-error', expectedMessage).should('be.visible')
-// }
-
-
-
 export function Submit() {
   //Clicar no botão
   cy.get('.btn__send button').click()
